@@ -1,4 +1,4 @@
-package main
+package day02
 
 type q2round struct {
 	P1 string
