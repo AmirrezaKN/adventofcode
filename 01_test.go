@@ -14,6 +14,7 @@ func TestQuestion011(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer f.Close()
 
 	bytes, err := ioutil.ReadAll(f)
 	if err != nil {
@@ -41,7 +42,7 @@ func TestQuestion011(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			assert.Equal(t, tt.want, Question011(tt.args.input))
+			assert.Equal(t, tt.want, Question01_1(tt.args.input))
 		})
 	}
 }
@@ -51,6 +52,7 @@ func TestQuestion012(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer f.Close()
 
 	bytes, err := ioutil.ReadAll(f)
 	if err != nil {
@@ -78,7 +80,7 @@ func TestQuestion012(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			assert.Equal(t, tt.want, Question012(tt.args.input))
+			assert.Equal(t, tt.want, Question01_2(tt.args.input))
 		})
 	}
 }

@@ -2,7 +2,7 @@ package main
 
 import "strconv"
 
-func Question011(input []string) int {
+func Question01_1(input []string) int {
 	max, temp := 0, 0
 
 	for _, item := range input {
@@ -28,7 +28,7 @@ func Question011(input []string) int {
 	return max
 }
 
-func Question012(input []string) int {
+func Question01_2(input []string) int {
 	temp := 0
 	max := []int{0}
 
