@@ -58,7 +58,7 @@ func TestQuestion02_2(t *testing.T) {
 			args: args{
 				input: lines,
 			},
-			want: 7889,
+			want: 2825,
 		},
 	}
 	for _, tt := range tests {
