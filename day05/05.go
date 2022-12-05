@@ -30,9 +30,6 @@ func Question05_2(stacks [9][]string, moves []move) string {
 	result := ""
 
 	for _, move := range moves {
-		// cargo := stacks[move.source-1][len(stacks[move.source-1])-move.amount-1:]
-		// stacks[move.source-1] = stacks[move.source-1][len(stacks[move.source-1])-move.amount-1:]
-		// stacks[move.destination-1] = append(stacks[move.destination-1], cargo...)
 		cargo := []string{}
 		for i := 0; i < move.amount; i++ {
 			cargo = append(cargo, stacks[move.source-1][len(stacks[move.source-1])-1])
