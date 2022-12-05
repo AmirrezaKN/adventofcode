@@ -8,7 +8,7 @@ type pair struct {
 	A, B sectionRange
 }
 
-func Question03_1(input []pair) int {
+func Question04_1(input []pair) int {
 	total := 0
 
 	for _, p := range input {
@@ -22,7 +22,7 @@ func Question03_1(input []pair) int {
 	return total
 }
 
-func Question03_2(input []pair) int {
+func Question04_2(input []pair) int {
 	total := 0
 
 	for _, p := range input {

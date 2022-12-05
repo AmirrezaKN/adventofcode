@@ -44,8 +44,8 @@ func TestQuestion04_1(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Question03_1(tt.args.input); got != tt.want {
-				t.Errorf("Question03_1() = %v, want %v", got, tt.want)
+			if got := Question04_1(tt.args.input); got != tt.want {
+				t.Errorf("Question04_1() = %v, want %v", got, tt.want)
 			}
 		})
 	}
@@ -88,8 +88,8 @@ func TestQuestion04_2(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Question03_2(tt.args.input); got != tt.want {
-				t.Errorf("Question03_2() = %v, want %v", got, tt.want)
+			if got := Question04_2(tt.args.input); got != tt.want {
+				t.Errorf("Question04_2() = %v, want %v", got, tt.want)
 			}
 		})
 	}
