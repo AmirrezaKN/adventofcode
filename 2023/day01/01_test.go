@@ -1,7 +1,7 @@
 package day01
 
 import (
-	"io/ioutil"
+	"io"
 	"os"
 	"strings"
 	"testing"
@@ -16,7 +16,7 @@ func TestQuestion011(t *testing.T) {
 	}
 	defer f.Close()
 
-	bytes, err := ioutil.ReadAll(f)
+	bytes, err := io.ReadAll(f)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -35,9 +35,21 @@ func TestQuestion011(t *testing.T) {
 		{
 			name: "1",
 			args: args{
+				input: []string{
+					"1abc2",
+					"pqr3stu8vwx",
+					"a1b2c3d4e5f",
+					"treb7uchet",
+				},
+			},
+			want: 142,
+		},
+		{
+			name: "2",
+			args: args{
 				input: lols,
 			},
-			want: 69836,
+			want: 54561,
 		},
 	}
 	for _, tt := range tests {
@@ -54,7 +66,7 @@ func TestQuestion012(t *testing.T) {
 	}
 	defer f.Close()
 
-	bytes, err := ioutil.ReadAll(f)
+	bytes, err := io.ReadAll(f)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -73,9 +85,24 @@ func TestQuestion012(t *testing.T) {
 		{
 			name: "1",
 			args: args{
+				input: []string{
+					"two1nine",
+					"eightwothree",
+					"abcone2threexyz",
+					"xtwone3four",
+					"4nineeightseven2",
+					"zoneight234",
+					"7pqrstsixteen",
+				},
+			},
+			want: 281,
+		},
+		{
+			name: "2",
+			args: args{
 				input: lols,
 			},
-			want: 207968,
+			want: 54076,
 		},
 	}
 	for _, tt := range tests {

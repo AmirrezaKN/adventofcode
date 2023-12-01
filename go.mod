@@ -1,6 +1,6 @@
 module app
 
-go 1.19
+go 1.21.4
 
 require gotest.tools v2.2.0+incompatible
 
