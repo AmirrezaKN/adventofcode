@@ -103,7 +103,7 @@ func TestQuestion012(t *testing.T) {
 			args: args{
 				input: lols,
 			},
-			want: 54076,
+			want: 23177084,
 		},
 	}
 	for _, tt := range tests {
